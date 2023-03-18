@@ -1,0 +1,20 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+
+\section{Bisection Method}
+
+Suppose we want to find a root of the function $f(x)$ on the interval $[a,b]$ using the bisection method. Here is the algorithm:
+
+\begin{enumerate}
+\item Let $c = \frac{a+b}{2}$ be the midpoint of the interval.
+\item Evaluate $f(c)$.
+\item If $f(c) = 0$, then $c$ is the root and we are done.
+\item If $f(c)$ has the same sign as $f(a)$, then the root is in the interval $[c,b]$. Set $a = c$ and go to step 1.
+\item If $f(c)$ has the same sign as $f(b)$, then the root is in the interval $[a,c]$. Set $b = c$ and go to step 1.
+\end{enumerate}
+
+The bisection method is guaranteed to converge to a root of $f(x)$ provided that $f(x)$ is continuous on $[a,b]$ and $f(a)$ and $f(b)$ have opposite signs.
+
+\end{document}

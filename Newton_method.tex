@@ -1,0 +1,21 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+
+\section{Newton-Raphson Method}
+
+Suppose we want to find a root of the function $f(x)$ using the Newton-Raphson method. Here is the algorithm:
+
+\begin{enumerate}
+\item Choose an initial guess $x_0$.
+\item Calculate $f(x_0)$ and $f'(x_0)$.
+\item Let $x_1 = x_0 - \frac{f(x_0)}{f'(x_0)}$.
+\item Calculate $f(x_1)$ and $f'(x_1)$.
+\item Let $x_2 = x_1 - \frac{f(x_1)}{f'(x_1)}$.
+\item Continue this process until the desired level of accuracy is achieved.
+\end{enumerate}
+
+The Newton-Raphson method is guaranteed to converge to a root of $f(x)$ provided that $f(x)$ is continuous and differentiable, and the initial guess is sufficiently close to the root.
+
+\end{document}
