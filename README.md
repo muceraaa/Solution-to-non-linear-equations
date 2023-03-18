@@ -1,11 +1,12 @@
 # solutions-to-non-linear-equations
 
 1 Bisection Method
+
 Suppose we want to find a root of the function f(x) on the interval [a, b] using
 the bisection method. Here is the algorithm:
 1. Let c =
-a+b
-2
+(a+b)
+/2
 be the midpoint of the interval.
 2. Evaluate f(c).
 3. If f(c) = 0, then c is the root and we are done.
@@ -18,6 +19,7 @@ that f(x) is continuous on [a, b] and f(a) and f(b) have opposite signs.
 
 
 2 Newton-Raphson Method
+
 Suppose we want to find a root of the function f(x) using the Newton-Raphson
 method. Here is the algorithm:
 1. Choose an initial guess x0.
